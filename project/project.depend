@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1730366952 source:c:\users\user\documents\code blocks facultate\project\functii.cpp
+	"functii.h"
+
+1730366967 c:\users\user\documents\code blocks facultate\project\functii.h
+	<iostream>
+	<fstream>
+	<sstream>
+	<cstring>
+
+1730367148 source:c:\users\user\documents\code blocks facultate\project\main.cpp
+	"functii.h"
+
