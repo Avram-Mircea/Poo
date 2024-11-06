@@ -1,0 +1,3 @@
+bio 0
+mate 3
+info 5
