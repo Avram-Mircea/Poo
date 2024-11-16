@@ -1,0 +1,5 @@
+﻿  student.cpp
+C:\Users\USER\source\repos\Poo\student.cpp(23,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\USER\source\repos\Poo\student.cpp(37,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\USER\source\repos\Poo\student.cpp(17,9): warning C4101: 'j': unreferenced local variable
+  Poo.vcxproj -> C:\Users\USER\source\repos\Poo\x64\Debug\Poo.exe
