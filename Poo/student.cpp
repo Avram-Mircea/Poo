@@ -8,13 +8,20 @@ student::student(user _user)
 	position = "student";
 }
 
+void student::safe_info_student()
+{
+	ofstream file(this->name + ".txt");
+	file << this->password << '\n' << this->position << '\n' << this->book_3;
+	file.close();
+}
+
 void student::allocate_book()
 {
 	string current_line, file_content;
 	char wanted_book[MAX_LENGTH_CHAR], line_char[MAX_LENGTH_CHAR];
 	ifstream file;
 	bool end_file = false, same_word;
-	int i, j, length_wanted_book, length_current_line, number_of_books = 0;
+	int i, length_wanted_book, length_current_line;
 
 	file.open("carti.txt");
 
@@ -35,9 +42,16 @@ void student::allocate_book()
 		if (same_word)
 		{
 			length_current_line = strlen(line_char);
-			if (line_char[length_current_line - 1] != '0')
+			if (line_char[length_current_line - 1] == '0' && line_char[length_current_line - 2] == ' ')
+			{
+				cout << "\033[91mNu se poate aloca cartea.\nNumarul cartilor este 0.\033[0m";
+				getchar();
+			}
+			else if (line_char[length_current_line - 1] != '0')
 			{
 				line_char[length_current_line - 1]--;
+				book_3 = wanted_book;
+				safe_info_student();
 			}
 			else
 			{
@@ -63,6 +77,8 @@ void student::allocate_book()
 						line_char[i] = '9';
 					line_char[length_current_line] = '\0';
 				}
+				book_3 = wanted_book;
+				safe_info_student();
 			}
 			file_content += line_char;
 			if (!file.eof())
