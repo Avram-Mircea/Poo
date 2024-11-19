@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	/*user _user;
+	user _user;
 	int option = 1;
 	while (option)
 	{
@@ -41,28 +41,12 @@ int main()
 	if (_user.is_student())
 	{
 		student _student(_user);
-		_student.show();
+		_student.allocate_book();
 	}
 	else
 	{
 		_user.show();
-	}*/
+	}
 	
-	/*string current_line, file_content;
-	ifstream file;
-	bool a;
-
-	file.open("carti.txt");
-	if (!file.is_open())
-		return -1;
-	a = file.eof();
-	while (!a)
-	{
-		getline(file, current_line);
-		cout << current_line << endl;
-		a = file.eof();
-	}*/
-	student s;
-	s.allocate_book();
 	return 0;
 }
