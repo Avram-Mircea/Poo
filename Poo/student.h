@@ -7,6 +7,7 @@ class student : public user
 public:
 	student() {};
 	student(user _user);
+	void safe_info_student();
 	void allocate_book();
 private:
 	string book_3;
