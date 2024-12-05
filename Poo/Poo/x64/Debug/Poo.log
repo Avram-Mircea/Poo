@@ -1,4 +1,0 @@
-﻿  student.cpp
-C:\Users\USER\source\repos\Poo - Copy\student.cpp(30,29): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\USER\source\repos\Poo - Copy\student.cpp(45,32): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-  Poo.vcxproj -> C:\Users\USER\source\repos\Poo - Copy\x64\Debug\Poo.exe
