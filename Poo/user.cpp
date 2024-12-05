@@ -1,9 +1,7 @@
 #include "user.h"
 
 user::user()
-{
-	name = ' ';
-}
+{ }
 
 void user::set_user(string _name, string _password, string _position)
 {
@@ -14,7 +12,7 @@ void user::set_user(string _name, string _password, string _position)
 
 int user::exist()
 {
-	return name.compare(" ");
+	return name.compare("");
 }
 
 void user::show()

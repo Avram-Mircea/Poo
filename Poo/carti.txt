@@ -1,4 +1,4 @@
-bio 99
-mate 119
-info 109
-chimie 6
+bio 96
+mate 109
+info 107
+chimie 0

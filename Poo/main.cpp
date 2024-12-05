@@ -1,11 +1,9 @@
 #include<iostream>
-#include"functions.h"
-#include"student.h"
-using namespace std;
+#include"menu.h"
 
 int main()
 {
-	user _user;
+	/*user _user;
 	int option = 1;
 	while (option)
 	{
@@ -47,6 +45,7 @@ int main()
 	{
 		_user.show();
 	}
-	
+	*/
+	menu m;
 	return 0;
 }
